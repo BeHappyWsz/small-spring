@@ -9,7 +9,7 @@ import wsz.springframework.factory.DefaultListableBeanFactory;
  *
  * @author wsz
  * @desc：
- * @date 2021/9/1
+ * @date 2021/9/2
  */
 public class SpringTest {
 
@@ -19,7 +19,7 @@ public class SpringTest {
 
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
         beanFactory.registerBeanDefinition(beanNmae, new BeanDefinition(UserService.class));
-
+        // 传参
         UserService bean = (UserService) beanFactory.getBean(beanNmae, "wsz");
         System.out.println(bean.toString());
     }
