@@ -7,4 +7,5 @@
 - step-02：无参构造获取bean，class.getDeclaredConstructor()
 - step-03：支持cglib获取bean，Enhancer.create()
 - step-04：属性填充
+- step-05：从xml中读取、注册BeanDefinition
 ---
