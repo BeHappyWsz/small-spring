@@ -35,6 +35,6 @@ public class ClassPathResource implements Resource {
         if (stream == null) {
             throw new FileNotFoundException(this.path + "cannot be open because it does not exist");
         }
-        return null;
+        return stream;
     }
 }
